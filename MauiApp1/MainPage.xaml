@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.MainPage">
+
+
+
+    <ScrollView  BackgroundColor="Gray" 
+  >
+                            <VerticalStackLayout Padding="30,0" Spacing="25">
+
+                                <!-- Title -->
+                                <Label Text="Bienvenue à l'optimiseur simple de la Nutrition des vaches laitières"
+                   Style="{StaticResource Headline}"
+                   SemanticProperties.HeadingLevel="Level1"
+                   HorizontalOptions="Center" 
+                   FontSize="24"
+                   FontAttributes="Bold" />
+
+                                <!-- Grid Layout -->
+                                <Grid RowSpacing="20" ColumnSpacing="20">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="1*" />
+                                        <ColumnDefinition Width="1*" />
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto" />
+                                        <RowDefinition Height="Auto" />
+                                        <RowDefinition Height="Auto" />
+                                    </Grid.RowDefinitions>
+
+                                    <!-- Row 1 -->
+                                    <Button Text="Animal" 
+                        SemanticProperties.Hint="Navigates to Animal details" 
+                        Clicked="OnAnimalClicked"
+                        HorizontalOptions="Fill"
+                        VerticalOptions="Center" 
+                        Grid.Row="0" 
+                        Grid.Column="0" 
+                        BackgroundColor="White" 
+                        TextColor="Black" 
+                        CornerRadius="10" />
+
+                                    <Button Text="Calcul Ration" 
+                        SemanticProperties.Hint="Calculates the ration" 
+                        Clicked="OnCalculRationClicked"
+                        HorizontalOptions="Fill"
+                        VerticalOptions="Center" 
+                        Grid.Row="0" 
+                        Grid.Column="1" 
+                        BackgroundColor="White" 
+                        TextColor="Black" 
+                        CornerRadius="10" />
+
+                                    <!-- Row 2 -->
+                                    <Button Text="Conseils" 
+                        SemanticProperties.Hint="Provides tips" 
+                        Clicked="OnConseilsClicked"
+                        HorizontalOptions="Fill"
+                        VerticalOptions="Center" 
+                        Grid.Row="1" 
+                        Grid.Column="0" 
+                        BackgroundColor="White" 
+                        TextColor="Black" 
+                        CornerRadius="10" />
+
+                                    <Button Text="Statistiques" 
+                        SemanticProperties.Hint="Shows statistics" 
+                        Clicked="OnStatistiquesClicked"
+                        HorizontalOptions="Fill"
+                        VerticalOptions="Center" 
+                        Grid.Row="1" 
+                        Grid.Column="1" 
+                        BackgroundColor="White" 
+                        TextColor="Black" 
+                        CornerRadius="10" />
+
+                                    <!-- Row 3 -->
+                                    <Button Text="Fournisseurs" 
+                        SemanticProperties.Hint="Displays suppliers" 
+                        Clicked="OnFournisseursClicked"
+                        HorizontalOptions="Fill"
+                        VerticalOptions="Center" 
+                        Grid.Row="2" 
+                        Grid.Column="0" 
+                        BackgroundColor="White" 
+                        TextColor="Black" 
+                        CornerRadius="10" />
+
+                                    <Button Text="Prix marché" 
+                        SemanticProperties.Hint="Shows market prices" 
+                        Clicked="OnPrixMarcheClicked"
+                        HorizontalOptions="Fill"
+                        VerticalOptions="Center" 
+                        Grid.Row="2" 
+                        Grid.Column="1" 
+                        BackgroundColor="White" 
+                        TextColor="Black" 
+                        CornerRadius="10" />
+                                </Grid>
+
+                            </VerticalStackLayout>
+                        </ScrollView>
+
+                    </ContentPage>
